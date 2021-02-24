@@ -1,0 +1,24 @@
+Install and load packages dplyr and data.table
+
+The following variables are related to data acquired from smartphone accelerometers provided to subjects who underwent several activities. Variables such as acceleration, 
+gyroscopic forces, and gravity were tracked then used in the analysis. 
+
+The following URL will allow the user to download a compressed folder containing several files: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip  
+
+The files are as follows: 
+features_info.txt: an overview of the features of this dataset
+features.txt: a list of all the features
+activity_labels.txt: labels that will link the activities to classes
+X_train.txt: data from training observations
+y_train.txt: labels of data from training observations
+subject_train.txt: data on each subject(n=30) in this analysis at the training phase
+X_test.txt: data from test observations
+y_test.txt: labels of data from test observations
+subject_test.txt: data on each subject(n=30) in this analysis at the test phase
+
+The file run_analysis.R will extract these files from the provided URL, read them from the working directory and do the following functions:
+1. Merge the training and test datasets into a single data set
+2. Extract the means and standard deviations from this merged data set
+3. Use descriptive names to relabel the activities in the merged data set
+4. Assign the appropriate labels to each variable
+5. Create an independent, tidy data set with the average for each variable for each subject and for each activity
