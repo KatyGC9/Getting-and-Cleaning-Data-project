@@ -21,4 +21,4 @@ The file run_analysis.R will extract these files from the provided URL, read the
 2. Extract the means and standard deviations from this merged data set
 3. Use descriptive names to relabel the activities in the merged data set
 4. Assign the appropriate labels to each variable
-5. Create an independent, tidy data set with the average for each variable for each subject and for each activity
+5. Create an independent, tidy data set with the average for each variable for each subject and for each activity. The output will be written using the write.table function
